@@ -1,12 +1,16 @@
-package com.apress.crm.customer.Application;
+package com.apress.crm.customer.Repository;
 
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
+
 import org.springframework.stereotype.Component;
 
+import com.apress.crm.customer.Domain.Customer;
+import com.apress.crm.customer.Interface.Repository;
+
 @Component
-public class CustRepoApp implements Repository<Customer, UUID> {
+public class CustomerRepository implements Repository<Customer, UUID> {
 
     Map<UUID, Customer> customers = new ConcurrentHashMap<> ();
 

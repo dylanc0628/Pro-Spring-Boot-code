@@ -11,8 +11,8 @@
 	<groupId>com.apress.crm</groupId>
 	<artifactId>customer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>customer<name/>
-	<description>A simple customer CRM application<description/>
+	<name>customer</name>
+	<description>A simple customer CRM application</description>
 	<url/>
 	<licenses>
 		<license/>
