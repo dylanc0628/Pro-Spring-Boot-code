@@ -1,5 +1,13 @@
 package com.apress.crm.management.repository;
 
+import com.apress.crm.management.model.Address;
+import org.springframework.stereotype.Component;
+
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
+
 @Component
 public class AddressRepository implements Repository<Address, UUID> {
     private final Map<UUID, Address> addresses = new ConcurrentHashMap<>();
